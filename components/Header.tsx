@@ -38,7 +38,7 @@ export function Header() {
         <div className="profile-photo-frame">
           <Image
             className="profile-photo"
-            src="/umesh.png"
+            src="/portfolio.png"
             alt={`Portrait of ${personal.name}`}
             fill
             sizes="(max-width: 767px) 255px, (max-width: 991px) 325px, 410px"
