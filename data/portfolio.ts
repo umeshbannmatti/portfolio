@@ -85,6 +85,10 @@ export const skills = [
     items: ["Microsoft Copilot Studio", "Power Automate"],
   },
   {
+    category: "AI & Intelligent Applications",
+    items: ["RAG", "Agentic AI", "LangChain", "MCP"],
+  },
+  {
     category: "Architecture",
     items: [
       "Solution Design",
