@@ -1,0 +1,4 @@
+import { ExternalLink } from "lucide-react";
+import { timeline } from "@/data/portfolio";
+import { SectionHeading } from "./SectionHeading";
+export function Timeline() { return <section id="experience" className="content-section section-anchor"><SectionHeading>CAREER EXPERIENCE</SectionHeading><div className="timeline">{timeline.map((item) => <div className="timeline-item" key={item.year}><div className="timeline-year"><span>{item.year}</span></div><div className="timeline-content">{item.roles.map((role) => <article key={`${role.title}-${role.dates}`}><h3>{role.title} <span>@</span> {role.href ? <a href={role.href} target="_blank" rel="noreferrer">{role.company}<ExternalLink size={14}/></a> : role.company}</h3><p className="timeline-dates">{role.dates} · {role.duration}</p><p>{role.description}</p></article>)}</div></div>)}</div></section>; }
