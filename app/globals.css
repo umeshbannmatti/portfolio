@@ -622,7 +622,7 @@ footer span {
 footer a:hover {
   color: var(--accent);
 }
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .menu-button {
     display: block;
   }
@@ -1654,7 +1654,20 @@ footer > div {
     margin-bottom: 55px;
   }
   .section-heading span {
-    background-size: 180px;
+    padding-bottom: 0;
+    background-image: none;
+  }
+  .section-heading:after {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 3px;
+    margin: 12px auto 0;
+    border-radius: 999px;
+    background: #2a5d8d;
+  }
+  .dark .section-heading:after {
+    background: #79add9;
   }
   .about-grid,
   .contact-grid {
@@ -1938,6 +1951,9 @@ html.dark {
 .dark .site-nav {
   background: rgba(2, 17, 26, 0.9);
 }
+.dark .nav-links {
+  background: #02111a;
+}
 .dark .wordmark,
 .dark .nav-links a,
 .dark .menu-button,
@@ -2117,11 +2133,8 @@ html.dark {
     justify-content: flex-start;
   }
   .theme-toggle {
-    position: absolute;
-    right: 76px;
-  }
-  .dark .nav-links {
-    background: #02111a;
+    position: static;
+    margin-left: 6px;
   }
 }
 @media (max-width: 400px) {
